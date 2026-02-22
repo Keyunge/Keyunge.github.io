@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <title>KeyunFAQ</title>
+    <link rel="icon" href="./user-home.png" />
+
+    <style>
+        body {
+            max-width: 750px;
+            margin: 20px auto;
+            line-height: 1.6em;
+            font-size: 17px;
+            background-color: #1d2021; /* Darker outer background */
+            color: #d4be98;
+            font-family: monospace;
+            padding: 0 15px;
+        }
+
+        /* The Light Zone Container */
+        .content-box {
+            background-color: #282828; /* Slightly lighter inner background */
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #3c3836;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .top-bar {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        a {
+            color: #7daea3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ea9d34;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 650;
+            color: #d8a657;
+            margin-top: 0;
+        }
+
+        /* FAQ Styling */
+        details {
+            padding: 0.8rem 1rem;
+            background: #32302f; /* Darker than the box but lighter than body */
+            color: #d4be98;
+            margin-bottom: 1rem;
+            border-left: 4px solid #d8a657; /* Accent bar */
+            border-radius: 4px;
+        }
+        
+        summary {
+            cursor: pointer;
+            font-weight: 900;
+            color: #d8a657; /* Question text color */
+        }
+
+        details[open] {
+            padding-bottom: 0.75rem;
+            background: #3c3836; /* Highlight when open */
+        }
+
+        details[open] summary {
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid #504945;
+        }
+
+        /* Links inside the FAQ answers */
+        details a {
+            color: #7daea3;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #504945;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <nav>
+            <a href="./index.html">[Home]</a> |
+            <a href="/skills.html">[My skills]</a> |
+            <a href="./faq.html">[FAQ]</a>
+        </nav>
+    </div>
+    <hr />
+
+    <div class="content-box">
+        <h1>Friendly Asked Questions</h1>
+
+        <details>
+            <summary>How did you make this website?</summary>
+            With HTML, CSS, and no-JS standards.
+        </details>
+        
+        <details>
+            <summary>What is your favorite transport?</summary>
+            Railway (Metro, Tram, Trains).
+        </details>
+        
+        <details>
+            <summary>Color scheme?</summary>
+            Gruvbox.
+        </details>
+        
+        <details>
+            <summary>What is in your backpack?</summary>
+            Laptop, some notebooks, Kindle, and a pen.
+        </details>
+        
+        <details>
+            <summary>How can I ask you a question?</summary>
+            Via Telegram: <a href="https://t.me/keyunge">@keyunge</a>
+        </details>
+    </div>
+
+    <hr />
+    <div class="top-bar">
+        <nav>
+            <a href="https://twitch.tv/keyunge">[Twitch]</a> |
+            <a href="https://t.me/keyunge">[Telegram]</a> |
+            <a href="https://github.com/keyunge">[Github]</a>
+        </nav>
+    </div>
+</body>
+</html>

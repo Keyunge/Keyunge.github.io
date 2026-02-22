@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <title>404 - Not Found</title>
+  <link rel="icon" href="./user-home.png" />
+
+  <style>
+    body {
+      max-width: 750px;
+      margin: 20px auto;
+      line-height: 1.6em;
+      font-size: 17px;
+      background-color: #1d2021; /* Matches your index.html background */
+      color: #d4be98;
+      font-family: monospace;
+      padding: 0 15px;
+    }
+
+    .content-box {
+      background-color: #282828;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #fb4934; /* Red border for error */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .top-bar {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a {
+      color: #7daea3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #ea9d34;
+    }
+
+    h1 {
+      color: #fb4934; /* Gruvbox Red */
+      margin-top: 0;
+      font-size: 3em;
+    }
+
+    .terminal-text {
+      text-align: left;
+      background: #1d2021;
+      padding: 15px;
+      border-radius: 4px;
+      color: #b8bb26; /* Gruvbox Green */
+      margin: 20px 0;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #504945;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <nav>
+      <a href="./index.html">[Home]</a> |
+      <a href="/skills.html">[My skills]</a> |
+      <a href="./faq.html">[FAQ]</a>
+    </nav>
+  </div>
+  <hr />
+
+  <div class="content-box">
+    <h1>404</h1>
+    <p><strong>Whoops, there is nothing here</strong></p>
+    
+    <div class="terminal-text">
+        [keyunge@arch-btw]~$ curl keyun.ge <br>
+        ERROR: There is no page
+    </div>
+
+    <p><a href="./index.html">Click here to go back home.</a></p>
+  </div>
+
+  <hr />
+  <div class="top-bar">
+    <nav>
+      <a href="https://twitch.tv/keyunge">[Twitch]</a> |
+      <a href="https://t.me/keyunge">[Telegram]</a> |
+      <a href="https://github.com/keyunge">[Github]</a>
+    </nav>
+  </div>
+</body>
+</html>
