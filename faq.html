@@ -1,140 +1,210 @@
 <!doctype html>
-<html>
 <head>
-    <title>KeyunFAQ</title>
-    <link rel="icon" href="./user-home.png" />
+  <link rel="stylesheet" href="https://unpkg.com/7.css" />
 
-    <style>
-        body {
-            max-width: 750px;
-            margin: 20px auto;
-            line-height: 1.6em;
-            font-size: 17px;
-            background-color: #1d2021; /* Darker outer background */
-            color: #d4be98;
-            font-family: monospace;
-            padding: 0 15px;
-        }
+  <style>
+    body {
+      align-items: center;
+      background: url(./images/Wallpaper.jpg) no-repeat center center fixed;
+      background-size: cover;
+      font-size: 24px;
+    }
 
-        /* The Light Zone Container */
-        .content-box {
-            background-color: #282828; /* Slightly lighter inner background */
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid #3c3836;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
+    .background {
+      width: 640px; /* Can be in percentage also. */
+      height: auto;
+      margin: 0 auto;
+      padding: 10px;
+      position: relative;
+      font-size: 48px;
+    }
 
-        .top-bar {
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            white-space: nowrap;
-        }
+    .content-area {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 35px;
+      min-height: 250px;
+    }
 
-        a {
-            color: #7daea3;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            color: #ea9d34;
-        }
+    .taskbar {
+      background: linear-gradient(
+        to bottom,
+        rgba(80, 100, 130, 0.6) 0%,
+        rgba(20, 30, 50, 0.8) 100%
+      );
+      backdrop-filter: blur(10px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 99.19%;
+      max-height: 40px;
 
-        h1 {
-            font-size: 2em;
-            font-weight: 650;
-            color: #d8a657;
-            margin-top: 0;
-        }
+      backdrop-filter: blur(10px);
+      padding: 6px;
+      display: flex;
+      margin-bottom: 0px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
-        /* FAQ Styling */
-        details {
-            padding: 0.8rem 1rem;
-            background: #32302f; /* Darker than the box but lighter than body */
-            color: #d4be98;
-            margin-bottom: 1rem;
-            border-left: 4px solid #d8a657; /* Accent bar */
-            border-radius: 4px;
-        }
-        
-        summary {
-            cursor: pointer;
-            font-weight: 900;
-            color: #d8a657; /* Question text color */
-        }
+    img {
+      max-width: 5%;
+      height: 5%;
+    }
 
-        details[open] {
-            padding-bottom: 0.75rem;
-            background: #3c3836; /* Highlight when open */
-        }
+    .taskbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    }
 
-        details[open] summary {
-            margin-bottom: 0.5rem;
-            border-bottom: 1px solid #504945;
-        }
+    .tray-clock {
+      margin-left: auto;
+      color: white;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      font-size: 14px;
+      text-align: right;
+      line-height: 1.1em;
+      padding-right: 5px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+      cursor: default;
+    }
 
-        /* Links inside the FAQ answers */
-        details a {
-            color: #7daea3;
-            text-decoration: underline;
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px solid #504945;
-            margin: 20px 0;
-        }
-    </style>
+    details {
+      font-size: 18px;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="top-bar">
-        <nav>
-            <a href="./index.html">[Home]</a> |
-            <a href="/skills.html">[My skills]</a> |
-            <a href="./faq.html">[FAQ]</a>
-        </nav>
-    </div>
-    <hr />
-
-    <div class="content-box">
-        <h1>Friendly Asked Questions</h1>
-
-        <details>
-            <summary>How did you make this website?</summary>
+  <div class="background">
+    <div class="window glass active" style="max-width: 700px">
+      <div class="title-bar">
+        <div class="title-bar-text">Keyunge.exe</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <ul role="menubar" class="can-hover">
+        <li role="menuitem" tabindex="0" aria-haspopup="true">
+          File
+          <ul role="menu">
+            <li role="menuitem">
+              <a href="./index.html"> Index <span>Ctrl+O</span> </a>
+            </li>
+            <li role="menuitem">
+              <a href="./skills.html"> Skills <span>Ctrl+S</span> </a>
+            </li>
+            <li role="menuitem" class="has-divider">
+              <a href="./credits.html"> Spetial Thanks! <span>Ctrl+Shift+S</span> </a>
+            </li>
+            <li role="menuitem"><a href="./404.html">Exit</a></li>
+          </ul>
+        </li>
+        <li role="menuitem" tabindex="0" aria-haspopup="true">
+          Edit
+          <ul role="menu">
+            <li role="menuitem"><a href="./404.html">Undo</a></li>
+            <li role="menuitem"><a href="./404.html">Copy</a></li>
+            <li role="menuitem"><a href="./404.html">Cut</a></li>
+            <li role="menuitem" class="has-divider">
+              <a href="./404.html">Paste</a>
+            </li>
+            <li role="menuitem"><a href="./404.html">Delete</a></li>
+            <li role="menuitem"><a href="./404.html">Find...</a></li>
+            <li role="menuitem"><a href="./404.html">Replace...</a></li>
+            <li role="menuitem"><a href="./404.html">Go to...</a></li>
+          </ul>
+        </li>
+        <li role="menuitem" tabindex="0" aria-haspopup="true">
+          View
+          <ul role="menu">
+            <li role="menuitem" tabindex="0" aria-haspopup="true">
+              Zoom
+              <ul role="menu">
+                <li role="menuitem"><a href="./404.html">Zoom In</a></li>
+                <li role="menuitem"><a href="./404.html">Zoom Out</a></li>
+              </ul>
+            </li>
+            <li role="menuitem"><a href="./404.html">Status Bar</a></li>
+          </ul>
+        </li>
+        <li role="menuitem" tabindex="0" aria-haspopup="true">
+          Help
+          <ul role="menu">
+            <li role="menuitem"><a href="./404.html">View Help</a></li>
+            <li role="menuitem"><a href="./faq.html">About</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="window-body has-space">
+        <h1 style="font-size: 22px">Friendy Asked Questions</h1>
+        <p style="font-size: 20px">
+          On this page i answer your questions.
+        </p>
+        <p style="font-size: 26px">
+        <ul class="tree-view has-collapse-button has-connector has-container">
+         <details>
+            <summary><strong>How did you make this website?</strong></summary>
             With HTML, CSS, and no-JS standards.
         </details>
         
         <details>
-            <summary>What is your favorite transport?</summary>
+            <summary><strong>What is your favorite transport?</strong></summary>
             Railway (Metro, Tram, Trains).
         </details>
         
         <details>
-            <summary>Color scheme?</summary>
+            <summary><strong>Color scheme?</strong></summary>
             Gruvbox.
         </details>
         
         <details>
-            <summary>What is in your backpack?</summary>
+            <summary><strong>What is in your backpack?</strong></summary>
             Laptop, some notebooks, Kindle, and a pen.
         </details>
         
         <details>
-            <summary>How can I ask you a question?</summary>
+            <summary><strong>How can I ask you a question?</strong></summary>
             Via Telegram: <a href="https://t.me/keyunge">@keyunge</a>
         </details>
+        </p>
+      </div>
     </div>
+  </div>
+  <div class="taskbar">
+    <a href="https://t.me/slackoblokun">✈️ Telegram</a>
+    <a href="https://github.com/keyunge">🐙 Github</a>
+    <div class="tray-clock" id="clock">
+      <div id="time"></div>
+      <div id="date"></div>
+    </div>
+  </div>
+  <script>
+    function updateClock() {
+      const now = new Date();
 
-    <hr />
-    <div class="top-bar">
-        <nav>
-            <a href="https://twitch.tv/keyunge">[Twitch]</a> |
-            <a href="https://t.me/keyunge">[Telegram]</a> |
-            <a href="https://github.com/keyunge">[Github]</a>
-        </nav>
-    </div>
+      // Format Time (HH:MM)
+      const hours = String(now.getHours()).padStart(2, "0");
+      const minutes = String(
+        now.padStart ? now.getMinutes() : now.getMinutes(),
+      ).padStart(2, "0");
+      document.getElementById("time").textContent = `${hours}:${minutes}`;
+
+      // Format Date (DD.MM.YYYY)
+      const day = String(now.getDate()).padStart(2, "0");
+      const month = String(now.getMonth() + 1).padStart(2, "0");
+      const year = now.getFullYear();
+      document.getElementById("date").textContent = `${day}.${month}.${year}`;
+    }
+
+    // Update every second
+    setInterval(updateClock, 1000);
+    updateClock(); // Initial call
+  </script>
 </body>
-</html>
